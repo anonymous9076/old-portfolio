@@ -1,0 +1,39 @@
+
+.heading{
+    color: white;
+    letter-spacing: 5px;
+    margin: 5% 4% 0 3%;
+}
+.hire{
+    height: 27rem;
+    width: auto;
+    margin:2%;
+    z-index: 1;
+    background-color:#2d5285;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #2d5285 ;
+}
+.hire>div{
+    z-index: 3;
+    height: inherit;
+    width: inherit;
+    padding: 3%;
+    font-size: 1.2rem;
+    position: absolute;
+}
+.hire::before{
+    content: "";
+    background-color: #132043;
+    position: absolute;
+    z-index: 2;
+    top: 2%;
+    left: 1%;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    transform: rotate(45deg);
+
+}

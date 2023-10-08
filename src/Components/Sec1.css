@@ -1,0 +1,145 @@
+
+.intro {
+    height: 32rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 20px;
+    background-color: #2d5285;
+    overflow: hidden;
+    position: relative;
+}
+
+.art2{
+    position: absolute;
+    background-color: #132043;
+    height: 100%;
+    width: 50%;
+    right:0;
+    bottom: 0;
+    transform: rotate(45deg);
+    box-shadow: inset 0px 0px 10px rgb(34, 34, 34);
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    overflow:hidden;
+}
+
+.my-pic {
+    height: 40rem;
+    transform: rotate(350deg);
+    position: absolute;
+    bottom: -6%;
+    right: 4%;
+    filter: brightness(120%) drop-shadow(5px 5px 20px rgb(127, 125, 125));
+}
+
+.text {
+    color: white;
+    width: 100%;
+}
+.name {
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 15px;
+    filter: drop-shadow(2px 2px 5px rgb(83, 82, 82));
+    color: #DDE6ED;
+    text-align: center;
+    padding-top: 5%;
+}
+h2{
+    font-size: 2rem;
+    margin: 1% 0;
+    padding: 0;
+    margin-left: 6%;
+    letter-spacing: 5px;
+}
+p{
+    margin-left:6% ;
+    width: 40%;
+    letter-spacing: 2px;
+}
+
+.contact-list{
+    position: absolute;
+    height:8% ;
+    width:25% ;
+    margin:3% 13% ;
+}
+.icons{
+    list-style: none;
+    margin:0 8% ;
+   font-size: 1.5rem;
+} 
+@media screen and (max-width:600px){
+    .intro {
+        height: 47rem;
+        width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    .art2{
+        height: 21rem;
+        width: 21rem;
+        bottom: 25%;
+        right: 9%;
+        border-radius: 20px;
+        transform: rotate(45deg);
+    }
+    .name {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 15px;
+        filter: drop-shadow(2px 2px 5px rgb(83, 82, 82));
+        color: #DDE6ED;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .my-pic {
+        height: 30rem;
+        filter: drop-shadow(5px 5px 20px rgb(127, 125, 125));
+        transform: rotate(350deg);
+        position: absolute;
+        top: 8%;
+        right: 4%;
+
+    }
+    h2{
+        font-size: 2rem;
+        margin: 1% 0;
+        padding: 0;
+        margin-left: 15%;
+        letter-spacing: 5px;
+        z-index: 2;
+        position: absolute;
+    }
+    p{
+        margin-left:20% ;
+        width: 60%;
+        letter-spacing: 2px;
+        
+        bottom: 10%;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+    }
+    .contact-list{
+        position: absolute;
+        height:8% ;
+        width:100% ;
+        margin:3% 0% ;
+        bottom: 0;
+    }
+    .icons{
+        list-style: none;
+        margin:0 4% ;
+       font-size: 1.5rem;
+    } 
+}
