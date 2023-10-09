@@ -8,17 +8,18 @@
     font-size: 1.3rem;
     padding: 3%;
     position: relative;
-    z-index: -2;
+    z-index: 1;
+    border: 5px solid #2d5285;
 }
 .project::before{
     content: "";
     height: 100%;
-    width: 10%;
+    width: 7%;
     background-color: #132043;
     z-index: -1;
     position: absolute;
     top:0;
-    left: 10%;
+    left: 7%;
 }
 .project::after{
     content: "";
@@ -27,9 +28,8 @@
     background-color: #132043;
     z-index: -1;
     position: absolute;
-    top:2%;
-    
-    right: 6%;
+    top:3%;
+    right: 10%;
     transform: rotate(45deg);
 }
 .proj-item{
@@ -48,13 +48,12 @@
     transition: transform  1s ease-in;
     filter: brightness(90%);
     position: relative;
-    z-index: 2;
+    z-index: 5;
 
 }
 .heading{
     margin: 5% 0 2% 5%;
 }
 .proj-item>img:hover{
-    transform: scale(1.1);
-    filter: brightness(100%);
+    transform: scale(1.05);
 }
