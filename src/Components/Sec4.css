@@ -60,3 +60,19 @@
 .g {
     width: 55%;
 }
+@media screen and (max-width:600px) {
+    .sec4 {
+        height: fit-content;
+        width: 90%;
+        margin: auto;
+        background-color: #2d5285;
+        border-radius: 20px;
+        padding: 3%;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-gap: 1%;
+        padding-bottom:12%; 
+    }
+  
+    
+}

@@ -37,3 +37,17 @@
     transform: rotate(45deg);
 
 }
+@media screen and (max-width:600px) {
+    .hire{
+        height: 23rem;
+        width: auto;
+        margin:2%;
+        z-index: 1;
+        background-color:#2d5285;
+        border-radius: 20px;
+        color: white;
+        position: relative;
+        overflow: scroll;
+        border: 5px solid #2d5285 ;
+    }
+}

@@ -22,7 +22,7 @@ label{
     border-radius: 10px;
     outline: none;
     border-style: none;
-    padding: 1%;
+    padding: 3%;
     background-color: #132043;
     box-shadow: inset 3px  3px 5px white , 3px 3px 5px white;
     color: whitesmoke;
@@ -32,7 +32,7 @@ label{
     height: 60%;
     width: 80%;
     border-radius: 10px;
-    padding: 1%;
+    padding: 3%;
     outline: none;
     background-color: #132043;
     box-shadow: inset 3px  3px 5px white , 3px 3px 5px white;
@@ -54,4 +54,20 @@ label{
 }
 .submit:hover{
     background-color: #2d5285;
+}
+@media screen and (max-width:600px) {
+    .enter{
+        width: 70%;
+        height: 8%;
+    }
+    #textarea{
+        width: 100%;
+        height: 45%;
+    }
+    .submit{
+        width: 28%;
+    }
+    .contact{
+        height: 30rem;
+    }
 }

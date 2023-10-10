@@ -3,7 +3,7 @@ import './Contact.css'
 function Contact() {
   const handleform=()=>{
     
-    alert("your QUERY is been submited")
+    alert("your QUERY is been submitted")
   }
   return (
     <>

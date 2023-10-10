@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import './Sec1.css';
+import { Link } from 'react-router-dom'
 
 function Sec1() {
     return (
@@ -23,14 +24,23 @@ function Sec1() {
                     </p>
                     <div className='contact-list'>
                         <ul className='list'>
-                            <li className='icons'><FaGithub /></li>
-                            <li className='icons'><FaInstagram /></li>
-                            <li className='icons'><FaLinkedinIn /></li>
-                            <li className='icons'><FaEnvelope /></li>
+                            <Link to="https://github.com/anonymous9076" style={{ color: 'white' }} >
+                                <li className='icons'><FaGithub /></li>
+                            </Link>
+                            <Link to='https://www.instagram.com/__tushar__4369/' style={{ color: 'white' }}>
+                                <li className='icons'><FaInstagram /></li>
+                            </Link>
+                            <Link to='https://www.linkedin.com/in/mr-tushar-903636280/' style={{ color: 'white' }}>
+                                <li className='icons'><FaLinkedinIn /></li>
+                            </Link>
+                            <Link style={{ color: 'white' }} to='/'>
+                                <li className='icons'><FaEnvelope /></li>
+                            </Link>
+
                         </ul>
                     </div>
                 </div>
-                <img className='my-pic' src='./images/my.png' alt='...'></img>
+                <img className='my-pic' src='./images/adu2.png' alt='...'></img>
             </div>
         </div>
     )

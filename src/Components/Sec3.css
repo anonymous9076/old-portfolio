@@ -1,5 +1,5 @@
 .project{
-    height:100rem;
+    height:61rem;
     width: 90%;
     background-color: #2d5285;
     margin: 2% auto;
@@ -36,16 +36,17 @@
     height:50%;
     width: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
     margin-top: 5%;
+    grid-gap: 20px;
 }
 .proj-item>img{
-    height:100% ;
-    width: 70%;
+    height:100%;
+    width: 100%;
     margin: auto;
     border-radius: 20px;
     border: 5px solid white;
-    transition: transform  1s ease-in;
+    transition: transform  .2s ease-in;
     filter: brightness(90%);
     position: relative;
     z-index: 5;
@@ -56,4 +57,22 @@
 }
 .proj-item>img:hover{
     transform: scale(1.05);
+}
+@media screen  and (max-width:600px){
+    .sec3-text{
+        height: 15rem;
+        overflow: scroll;
+    }
+    .proj-item{
+        height:70%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-top: 5%;
+        grid-gap: 20px;
+    }
+    .project{
+        height: fit-content;
+    }
+ 
 }

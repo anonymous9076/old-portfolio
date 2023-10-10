@@ -9,48 +9,47 @@
     border: 5px solid #2d5285;
 }
 
-.art2{
+.art2 {
     position: absolute;
     background-color: #132043;
     height: 100%;
     width: 50%;
-    right:0;
+    left: 0;
     bottom: 0;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     box-shadow: inset 0px 0px 10px rgb(34, 34, 34);
 }
-.art{
+
+.art {
     position: absolute;
     background-color: #132043;
     height: 100%;
     width: 5%;
-    left:8%;
+    right: 10%;
     bottom: 0;
     box-shadow: inset 0px 0px 10px rgb(34, 34, 34);
 }
 
 .list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30%;
 }
 
 .my-pic {
-    height: 40rem;
-    transform: rotate(350deg);
+    height: 25rem;
+    width: 40%;
     position: absolute;
-    bottom: -6%;
-    right: 4%;
-    filter: brightness(120%) drop-shadow(5px 5px 20px rgb(127, 125, 125));
+    bottom: 4%;
+    right: 11%;
+    filter: drop-shadow(0px 0px 10px #2d5285);
 }
 
 .text {
     color: white;
     width: 100%;
 }
+
 .name {
     font-size: 6rem;
     margin: 0;
@@ -61,7 +60,8 @@
     text-align: center;
     padding-top: 5%;
 }
-.text>h2{
+
+.text>h2 {
     font-size: 2rem;
     margin: 1% 0;
     padding: 0;
@@ -70,47 +70,54 @@
     position: relative;
     z-index: inherit;
 }
-.text>p{
-    margin-left:6% ;
+
+.text>p {
+    margin-left: 6%;
     width: 40%;
     letter-spacing: 2px;
     position: relative;
     z-index: inherit;
 }
 
-.contact-list{
+.contact-list {
     position: absolute;
-    height:8% ;
-    width:25% ;
-    margin:3% 13% ;
+    height: 8%;
+    width: 25%;
+    margin: 3% 13%;
+    display: flex;
 }
-.icons{
+
+.icons {
     list-style: none;
-    margin:0 8% ;
-   font-size: 1.5rem;
-} 
-.icons:hover{
-    color:rgb(209, 209, 209);
+    height: inherit;
+    font-size: 1.8rem;
+}
+
+.icons:hover {
+    color: rgb(209, 209, 209);
     transform: scale(1.2);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
     .intro {
         height: 47rem;
         width: 100%;
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-    .art2{
-        height: 21rem;
-        width: 21rem;
-        bottom: 25%;
-        right: 9%;
+    .art{display: none;}
+
+    .art2 {
+        height: 100%;
+        width: 100%;
+        bottom: 0%;
+        left: 17%;
         border-radius: 20px;
         transform: rotate(45deg);
     }
+
     .name {
-        font-size: 4rem;
+        font-size: 5rem;
         margin: 0;
         padding: 0;
         letter-spacing: 15px;
@@ -119,44 +126,59 @@
         text-align: center;
         padding-top: 5%;
     }
-    .my-pic {
-        height: 30rem;
-        filter: drop-shadow(5px 5px 20px rgb(127, 125, 125));
-        transform: rotate(350deg);
-        position: absolute;
-        top: 8%;
-        right: 4%;
 
+    .my-pic {
+        height: 25rem;
+        width: 50%;
+        filter: drop-shadow(5px 5px 20px rgb(127, 125, 125));
+        position: absolute;
+        top: 3%;
+        right: 28%;
     }
-    h2{
+
+    .text>h2 {
         font-size: 2rem;
-        margin: 1% 0;
-        padding: 0;
-        margin-left: 15%;
         letter-spacing: 5px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
         z-index: 2;
         position: absolute;
+        bottom: 35%;
     }
-    p{
-        margin-left:20% ;
-        width: 60%;
+
+    .text>p {
+        width: 100%;
+        padding: 10%;
         letter-spacing: 2px;
-        
+        margin: 0;
         bottom: 10%;
         text-align: center;
         z-index: 2;
         position: absolute;
     }
-    .contact-list{
+
+    .contact-list {
         position: absolute;
-        height:8% ;
-        width:100% ;
-        margin:3% 0% ;
+        height: 8%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         bottom: 0;
+        text-align: center;
     }
-    .icons{
+    .list{
+        width: 50%;
+        padding: 0;
+        grid-gap: 0;
+        margin: 0 auto;
+    }
+
+    .icons {
+        width: 20%;
         list-style: none;
-        margin:0 4% ;
-       font-size: 1.5rem;
-    } 
+        /* margin: 0 4%; */
+        font-size: 1.5rem;
+    }
 }
