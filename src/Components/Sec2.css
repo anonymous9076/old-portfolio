@@ -1,53 +1,51 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
-.heading{
+.proj{
     color: white;
-    letter-spacing: 5px;
-    margin: 5% 4% 0 3%;
+    height: 100vh;
+    background-color: rgb(9, 9, 32) ;
+    margin: 0;
+    padding:0 3%;
 }
-.hire{
-    height: 27rem;
-    width: auto;
-    margin:2%;
-    z-index: 1;
-    background-color:#2d5285;
-    border-radius: 20px;
-    color: white;
+.proj-list{
+    height: 55%;
+    width: 100%;
+    margin: 1% 0;
+    padding:2% 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2% 1fr 2% 1fr 2% 1fr;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 2%;
     position: relative;
-    overflow: hidden;
-    border: 5px solid #2d5285 ;
+    z-index: 1;
 }
-.hire>div{
-    z-index: 3;
-    height: inherit;
-    width: inherit;
-    padding: 3%;
-    font-size: 1.2rem;
-    position: absolute;
-}
-.hire::before{
-    content: "";
-    background-color: #132043;
-    position: absolute;
-    z-index: 2;
-    top: 2%;
-    left: 1%;
-    height: 100%;
-    width: 50%;
-    border-radius: 20px;
-    transform: rotate(45deg);
-
-}
-@media screen and (max-width:600px) {
-    .hire{
-        height: 23rem;
-        width: auto;
-        margin:2%;
-        z-index: 1;
-        background-color:#2d5285;
-        border-radius: 20px;
-        color: white;
+@media screen and (max-width:480px){
+    .proj-list{
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 95%;
+        margin: 1.5rem auto;
+        padding:2rem 0;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 2%;
         position: relative;
-        overflow: scroll;
-        border: 5px solid #2d5285 ;
+        z-index: 1;
+    }
+    .proj{
+        color: white;
+        height: 72rem;
+        background-color: rgb(9, 9, 32) ;
+        margin: 0;
+        padding:0 3%;
     }
 }

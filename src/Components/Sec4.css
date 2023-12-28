@@ -1,78 +1,34 @@
-.sec4 {
-    height: 35rem;
-    width: 90%;
-    margin: auto;
-    background-color: #2d5285;
-    border-radius: 20px;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.sec4{
+    height: 100vh;
+    background-color: rgb(9, 9, 32);
     padding: 3%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2%;
-}
-
-.item {
-    background-color: whitesmoke;
-    border-radius: 20px;
-    width: 20%;
-    padding: 1%;
-    margin-right: 3%;
-}
-
-.skill-img {
-    height: 5rem;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.item-container {
-    background-color: #132043;
-    width: 100%;
-    border-radius: 20px;
-    padding: 2%;
-    color: white;
-    display: flex;
-    text-align: center;
-}
-
-.skill-bar {
-    background-color: #2d5285;
-    height: 20%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px black;
-    margin: 3% 10%;
-}
-
-.skill-info {
-    width: 100%;
-    height: inherit;
-    font-size: 1.3rem;
-}
-
-.a {
-    width: 60%;
-}
-.b,.c,.d {
-    width: 50%;
-}
-.e,.f {
-    width: 20%;
-}
-.g {
-    width: 55%;
-}
-@media screen and (max-width:600px) {
-    .sec4 {
-        height: fit-content;
-        width: 90%;
-        margin: auto;
-        background-color: #2d5285;
-        border-radius: 20px;
-        padding: 3%;
-        display: grid;
-        grid-template-columns:  1fr;
-        grid-gap: 1%;
-        padding-bottom:12%; 
-    }
-  
     
+}
+.content{
+    color:white;
+    padding:3% 2%;
+    font-size: 1.4rem;
+}
+@media screen and (max-width:480px){
+    .sec4{
+        height: 33rem;
+        background-color: rgb(9, 9, 32);
+        padding: 3%;
+    }
+    .content{
+        height: 80%;
+        color:white;
+        padding:3% 3%;
+        font-size: 1rem;
+        padding-bottom: 5%;
+        overflow: scroll;
+
+    }
 }
