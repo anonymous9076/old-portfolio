@@ -42,7 +42,7 @@
     grid-gap: 3%;
     overflow: hidden;
 }
-.cont-area > *:nth-child(1){
+/* .cont-area > *:nth-child(1){
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
@@ -65,7 +65,7 @@
 .cont-area > *:nth-child(6){
     -ms-grid-row: 5;
     -ms-grid-column: 3;
-}
+} */
 .enter-field{
     width:100%;
    
