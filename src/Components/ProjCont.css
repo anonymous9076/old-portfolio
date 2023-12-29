@@ -96,7 +96,8 @@
 @media screen and (max-width:480px){
     .proj-img{
         height: 13rem;
-        width: 13rem;
+        width: 10rem;
+        
         border-radius: 20px;
         position: relative;
         z-index: 0;
@@ -136,4 +137,5 @@
         height: 20%;
         width: 30%;
     }
+
 }
